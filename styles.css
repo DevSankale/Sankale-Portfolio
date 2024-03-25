@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  padding: 0px;
+scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: rgb(83, 82, 82);
+  color: red;
+
+}
+
+
+.navbar {
+  background-color: rgb(243, 189, 13);
+  padding: 20px;
+ 
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+li {
+  display: inline-block;
+ padding: 2px;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  padding: 10px;
+  font-weight: lighter;
+}
+
+
+li a:hover {
+  color:white;
+  font-size: 16px;
+  box-shadow: 2px 2px  black;
+  border-radius: 5px;
+}
+
+.homepage {
+  background-color:white;
+  color: black;
+}
+
+
+.welcome-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 200px;
+  flex-direction: column;
+}
+
+#welcome {
+  font-size: 20px;
+  padding: 50px;
+}
+
+.homepage img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.name-intro {
+  color: rgb(243, 189, 13);
+}
+
+.pic-div {
+  display: flex;
+  align-items: center;
+
+}
+
+.details {
+  padding: 100px;
+  font-size: 25px;
+}
+
+.project-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.project-tile img {
+
+  box-shadow: none;
+  width: 40vw;
+  height: auto;
+  color: black;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 200px;
+
+
+}
+
+.project-tile p {
+  padding: 50px;
+  border-right: 2px solid rgb(207, 137, 72);
+  border-top: 2px solid rgb(207, 137, 72);
+  margin: 20px;
+  border-radius: 20px;
+  color:rgb(250, 236, 191);
+  font-size: 12px;
+  line-height: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects {
+  padding: 100px;
+  margin-top: 30px;
+  background-color: white;
+
+}
+
+.projects h4 {
+  color: black;
+  font-weight: 900;
+}
+#topicHead{
+  font-weight: 900;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.projectdetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+img {
+width: 20%;
+  height: auto;
+  box-shadow: 3px 3px 3px black;
+ 
+}
+
+.linkimage{
+  width: 20px;
+  box-shadow: 0 0 0 0;
+  padding: 3px;
+}
+
+.linkimage:hover{
+  width: 20px; 
+ border-radius: 5px;
+background-color: rgb(243, 189, 13);
+padding: 3px;
+ 
+}
+.imagecontainer {
+  color: black;
+  padding: 50px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  color: gray;
+ 
+}
+
+.imagecontainer a {
+  color: black;
+  text-decoration: none;
+}
+
+.imagecontainer p {
+  margin-top: 30px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  padding: 100px;
+  margin-top: 70px;
+  border-top: 2px solid black;
+}
+
+.Contact {
+  color: black;
+  padding: 20px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contact a {
+  color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Contact a:hover {
+  color: white;
+  background-color: rgb(243, 189, 13);
+  border-radius: 50%;
+
+}
+
+ion-icon {
+
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#project-link {
+  color: black;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+#project-link:hover {
+  color: rgb(243, 189, 13);
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+
+}
+
+.form {
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 50px;
+  margin-bottom: 70px;
+  border: 1px solid gainsboro;
+  background-color: rgb(243, 189, 13);
+
+}
+
+button{
+  background-color: black;
+  padding: 5px;
+  color:rgb(243, 189, 13) ;
+  border:1px solid grey;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+button:hover{
+  background-color: black;
+  color:white ;
+  border: 1px solid white;
+  cursor: pointer;
+  
+}
