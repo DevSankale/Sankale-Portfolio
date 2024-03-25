@@ -1,11 +1,11 @@
 
 const picChange = document.getElementById('pic1');
  picChange.addEventListener('mouseover',(e)=>{
-picChange.src = "images/DSC_3363.jpg";
+picChange.src = "./images/DSC_3363.JPG";
  })
 
  picChange.addEventListener('mouseout',(e)=>{
-picChange.src = "images/DSC_33633.jpg"
+picChange.src = "./images/DSC_33633.jpg"
  })
 
 
