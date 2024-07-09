@@ -11,8 +11,10 @@ function Hero(){
           <h4>A Web Developer.</h4>
           </p>
         </div>
-        <img src="./src/assets/images/DSC_33634.jpg" alt="Potrait" id="pic1" /> 
+        <img src="./public/assets/images/DSC_33634.jpg" alt="Potrait" id="pic1" /> 
+     
     </div>
+    
   </div>
   )
 }
