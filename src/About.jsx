@@ -5,7 +5,7 @@ function About(){
   return(
 
     <div className="project-tile" id="About">
-      <img src="./public/assets/images/Sankale 7.jpg"/>
+      <img src="./public/images/Sankale 7.jpg"/>
       <div class="devdetails">
         <p>
           "
