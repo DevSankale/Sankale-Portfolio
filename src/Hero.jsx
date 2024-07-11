@@ -1,4 +1,5 @@
 import React from "react";
+import potrait from "./images/DSC_33634.jpg"
 
 function Hero(){
   return (
@@ -11,7 +12,7 @@ function Hero(){
           <h4>A Web Developer.</h4>
           </p>
         </div>
-        <img src="../public/images/DSC_33634.jpg" alt="Potrait" id="pic1" /> 
+        <img src={potrait} alt="Potrait" id="pic1" /> 
      
     </div>
     

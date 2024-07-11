@@ -1,11 +1,12 @@
 import React from "react";
+import image from "./images/Sankale 7.jpg"
 
 function About(){
 
   return(
 
     <div className="project-tile" id="About">
-      <img src="./public/images/Sankale 7.jpg"/>
+      <img src={image}/>
       <div class="devdetails">
         <p>
           "
