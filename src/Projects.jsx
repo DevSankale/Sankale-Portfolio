@@ -1,5 +1,4 @@
 import React from "react";
-import link from "./images/icons8-external-link-64.png"
 
 function Projects(props){
   return (
@@ -15,7 +14,7 @@ function Projects(props){
                 {props.title}
               </h3>
               <a href={props.link}target="_blank" id="project-link">
-              <img src={link} class="linkimage"/>
+              <img src="images/icons8-external-link-64.png" class="linkimage"/>
               </a>
             
             <p className="textDetails">
