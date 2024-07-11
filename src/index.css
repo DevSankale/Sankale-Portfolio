@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: rgb(243, 189, 13);
+  background-color: rgb(243, 189, 13); ;
   padding: 20px;
   position: fixed; /* Set navbar position to fixed */
   width: 100%; /* Make navbar span the entire width of the viewport */
