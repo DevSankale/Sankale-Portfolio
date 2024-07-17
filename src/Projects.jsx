@@ -6,7 +6,6 @@ function Projects(props){
   <div className="projects" id="Project">
      
       <div class="projectdetails">
-        <div class="containerGroup">
           <div class="imagecontainer">
               <p>{props.id}</p>
               <img src={props.projectCover}/>
@@ -21,7 +20,6 @@ function Projects(props){
              {props.description}
             </p>
           </div>
-        </div>
       </div>
   </div>
     
