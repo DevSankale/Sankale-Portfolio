@@ -3,9 +3,8 @@ import React from "react";
 function Projects(props){
   return (
 
-  <div className="projects" id="Project">
+
      
-      <div class="projectdetails">
           <div class="imagecontainer">
               <p>{props.id}</p>
               <img src={props.projectCover}/>
@@ -20,8 +19,8 @@ function Projects(props){
              {props.description}
             </p>
           </div>
-      </div>
-  </div>
+      
+  
     
   )
 }

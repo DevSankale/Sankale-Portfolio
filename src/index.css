@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: rgb(243, 189, 13); ;
+  background-color: rgb(243, 189, 13); 
   padding: 20px;
   position: fixed; /* Set navbar position to fixed */
   width: 100%; /* Make navbar span the entire width of the viewport */
@@ -48,25 +48,53 @@ li a:hover {
   box-shadow: 2px 2px black;
   border-radius: 5px;
 }
+.myWork{
+    
+    background-color: rgb(243, 189, 13); 
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    padding: 10px 110px;
+    font-weight: lighter;
+    transition: color 0.5s,box-shadow 0.5s,background-color 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .myWork:hover {
+    color: white;
+    box-shadow: 2px 2px black;
+    background-color: black;
+  }
+
 
 .homepage {
   background-color: white;
   color: black;
+  background-image: url("./images/bg4-image.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
 }
 
 .welcome-div {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding-bottom: 200px;
+  flex-direction: row;
+  padding: 200px;
+  gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.arrow{
+  width: 50px;
+  height: 50px;
 }
 
-#welcome {
-  font-size: 20px;
-  padding: 70px;
-  
-}
+
 
 .homepage img {
   width: 30vw;
@@ -85,6 +113,7 @@ li a:hover {
 }
 
 .details {
+  flex: 1;
   padding: 50px;
   font-size: 25px;
 }
@@ -116,19 +145,32 @@ li a:hover {
   line-height: normal;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.skills{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 100px;
+margin: 100px;
+gap: 50px;
+}
+.skillimage{
+  box-shadow: none;
+  height: auto;
+  width: 30%;
+}
+.projects-container{
+ 
 
+}
 .projects {
  
   margin-top: 30px;
-  background-color:white;
+
   padding: 50px;
-
+   
 
 }
-.project-section{
-  display: grid;
-  background-color:white;
-}
+
 .projects-head {
   color: black;
   font-weight: 900;
@@ -165,22 +207,21 @@ img {
   padding: 3px;
 }
 .imagecontainer {
-  color: black;
+ 
   padding: 30px;
   margin: 20px;
- 
-  border-bottom: 1px solid gray;
+  border: 1px solid gray;
   color: gray;
   transition: 0.5s background-color;
   border-radius: 10px;
+  text-align: center;
+ 
 }
 .imagecontainer:hover {
   color: black;
   padding: 30px;
   margin: 20px;
-  border-bottom: 1px solid gray;
   color: gray;
-  background-color: rgb(243, 189, 13);;
   color:black;
   border-radius: 10px;
 }
@@ -193,6 +234,11 @@ img {
 
 .imagecontainer p {
   margin-top: 30px;
+}
+.imagecontainer img{
+ 
+  max-width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -233,6 +279,7 @@ ion-icon {
   border-radius: 50%;
   padding: 10px;
 }
+
 
 #project-link {
   color: black;
@@ -278,4 +325,28 @@ button:hover {
   border: 1px solid white;
   cursor: pointer;
  
+}
+
+
+#pic1{
+  max-width: 100%;
+  
+}
+@media (max-width: 768px) {
+  .welcome-div {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .details {
+      text-align: center; /* Center text for better readability */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  #pic1 {
+      margin-top: 20px; /* Add space between text and image */
+  }
+  .projectdetails {
+    flex: 0 0 100%; /* Full width on smaller screens */
+}
 }

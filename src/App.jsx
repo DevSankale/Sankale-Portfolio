@@ -6,19 +6,19 @@ import About from './About'
 import Footer from './Footer'
 import data from './data'
 import Projects from './Projects'
+import Skills from './skills'
 
 
 function App() {
 
    const projectList = data.map((project)=>{
       return (
-        <Projects
-        projectNumber={project.id}
-        img={project.projectCover}
-        title={project.title}
-        description={project.description}
-        link={project.link}
+        
+           <Projects
+      key={project.id}{...project}
         />
+      
+      
       )
    })
  
@@ -27,8 +27,9 @@ function App() {
     <Header/>
     <Hero/>
     <About/>
-    <section className='project-section'>
-      <h4 className="projects-head">PROJECTS DONE.</h4>
+    <Skills/>
+    <section className="project-container">
+      <h4 className="projects-head " id="Project">PROJECTS DONE.</h4>
       {projectList}
     </section>
     <Footer/>
