@@ -153,10 +153,17 @@ padding: 100px;
 margin: 100px;
 gap: 50px;
 }
+.skill{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 50px;
+}
 .skillimage{
   box-shadow: none;
   height: auto;
-  width: 30%;
+  width: 60%;
 }
 .projects-container{
  
