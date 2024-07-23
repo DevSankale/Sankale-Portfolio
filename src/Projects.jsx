@@ -3,9 +3,10 @@ import React from "react";
 function Projects(props){
   return (
 
-
+          
      
           <div class="imagecontainer">
+        
               <p>{props.id}</p>
               <img src={props.projectCover}/>
               <h3 id="topicHead">

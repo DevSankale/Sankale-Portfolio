@@ -28,9 +28,14 @@ function App() {
     <Hero/>
     <About/>
     <Skills/>
-    <section className="project-container">
-      <h4 className="projects-head " id="Project">PROJECTS DONE.</h4>
+ 
+    <section >
+      <p id="Project">Projects</p>
+      <div
+      className="project-container">
+    
       {projectList}
+      </div>
     </section>
     <Footer/>
     </>
