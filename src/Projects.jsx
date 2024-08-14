@@ -1,11 +1,18 @@
 import React from "react";
 
 function Projects(props){
+
+
+  const styles = {
+    backgroundColor: "lightgray",
+    color:"black"
+
+  }
   return (
 
           
      
-          <div class="imagecontainer">
+          <div class="imagecontainer" style={styles} >
         
               <p>{props.id}</p>
               <img src={props.projectCover}/>

@@ -224,7 +224,7 @@ img {
   margin: 20px;
   border: 1px solid gray;
   color: black;
-  transition: 0.5s color;
+  transition: 0.5s color,0.5 background-color;
   border-radius: 10px;
   text-align: center;
   display: flex;

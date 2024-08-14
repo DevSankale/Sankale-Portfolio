@@ -10,11 +10,11 @@ import Skills from './skills'
 
 
 function App() {
-
+   
    const projectList = data.map((project)=>{
       return (
         
-           <Projects
+           <Projects 
       key={project.id}{...project}
         />
       
@@ -29,7 +29,7 @@ function App() {
     <About/>
     <Skills/>
  
-    <section >
+    <section>
       <p id="Project">Projects</p>
       <div
       className="project-container">
