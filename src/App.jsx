@@ -7,7 +7,7 @@ import Footer from './Footer'
 import data from './data'
 import Projects from './Projects'
 import Skills from './skills'
-
+import Form from './Form'
 
 function App() {
    
@@ -37,6 +37,7 @@ function App() {
       {projectList}
       </div>
     </section>
+    <Form/>
     <Footer/>
     </>
   )

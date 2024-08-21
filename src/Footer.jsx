@@ -3,18 +3,8 @@ import React from "react";
 function Footer(){
   return (
   <div className="footer">
-        <div className="form">
-        <form/>
-          <label for="name">Name</label><br/>
-          <input type="text" id="name" name="name" required/><br/>
-          <label for="email">Email</label><br/>
-          <input type="email" id="email" name="email" required/><br/><br/>
-          <textarea placeholder="Message Me..." required></textarea><br/>
-          <button type="submit" class="js-button">Submit</button>
-        
-        </div>
         <p>Lets Connect.</p>
-        <div class="Contact" id="Contact">
+        <div className="Contact" >
           <a href="https://www.instagram.com/sankaledev/" target="_blank"><ion-icon
               name="logo-instagram"></ion-icon></a>
           <a href="https://twitter.com/SankaleDev" target="_blank"><ion-icon name="logo-twitter">

@@ -12,7 +12,7 @@ function Projects(props){
 
           
      
-          <div class="imagecontainer" style={styles} >
+          <div className="imagecontainer" style={styles} >
         
               <p>{props.id}</p>
               <img src={props.projectCover}/>
@@ -20,7 +20,7 @@ function Projects(props){
                 {props.title}
               </h3>
               <a href={props.link}target="_blank" id="project-link">
-              <img src="./images/icons8-external-link-64.png" class="linkimage"/>
+              <img src="./images/icons8-external-link-64.png" className="linkimage"/>
               </a>
             
             <p className="textDetails">

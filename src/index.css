@@ -314,37 +314,49 @@ ion-icon {
 
 .form {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding: 50px;
+  padding: 60px;
   margin-bottom: 70px;
   border: 1px solid gainsboro;
   background-color: rgb(243, 189, 13);
+  margin: 50px;
+  border-radius: 10px;
+  
 }
-
-button {
-  background-color: black;
-  padding: 5px;
-  color: rgb(243, 189, 13);
-  border: 1px solid grey;
-  margin-top: 10px;
+input{
   display: block;
-  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  text-indent: 5px;
   border-radius: 5px;
+  border: none;
+  width: 100%;
 }
-
-textarea {
+textarea{
   display: block;
-  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  text-indent: 5px;
   border-radius: 5px;
+  border: none;
+  width: 100%;
 }
-button:hover {
-  background-color: black;
+.js-button{
+  background-color: black; 
+  text-decoration: none;
+  font-size: 12px;
   color: white;
-  border: 1px solid white;
-  cursor: pointer;
- 
+  padding: 10px 110px;
+  font-weight: lighter;
+  transition: color 0.5s,box-shadow 0.5s,background-color 0.5s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  border: none;
+  
 }
-
-
+.js-button:hover {
+  color:black;
+  background-color: darkgray;
+}
 #pic1{
   max-width: 100%;
   
