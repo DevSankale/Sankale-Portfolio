@@ -361,6 +361,15 @@ textarea{
   max-width: 100%;
   
 }
+.imagecontainer {
+  /* Base styling here */
+  transition: transform 0.3s ease; /* Smooth transition when scaling */
+}
+
+.imagecontainer:hover {
+  transform: scale(1.1); /* Scale the image container by 10% */
+}
+
 @media (max-width: 768px) {
   .welcome-div {
       flex-direction: column; /* Stack items vertically */

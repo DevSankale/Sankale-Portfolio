@@ -10,37 +10,36 @@ import Skills from './skills'
 import Form from './Form'
 
 function App() {
-   
-   const projectList = data.map((project)=>{
-      return (
-        
-           <Projects 
-      key={project.id}{...project}
-        />
-      
-      
-      )
-   })
- 
-  return (
-    <>
-    <Header/>
-    <Hero/>
-    <About/>
-    <Skills/>
- 
-    <section>
-      <p id="Project">Projects</p>
-      <div
-      className="project-container">
-    
-      {projectList}
-      </div>
-    </section>
-    <Form/>
-    <Footer/>
-    </>
-  )
+  const projectList = data.map((project) => {
+     return (
+       <Projects 
+         key={project.id}
+         id={project.id}
+         backgroundImage={project.backgroundImage}
+         title={project.title}
+         link={project.link}
+         description={project.description}
+       />
+     );
+  });
+
+ return (
+   <>
+     <Header />
+     <Hero />
+     <About />
+     <Skills />
+
+     <section>
+       <p id="Project">Projects</p>
+       <div className="project-container">
+         {projectList}
+       </div>
+     </section>
+     <Form />
+     <Footer />
+   </>
+ );
 }
 
-export default App
+export default App;
