@@ -8,8 +8,6 @@ export default function Form() {
     message: ""
   });
 
-
-
   function handleChange(event) {
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -17,11 +15,9 @@ export default function Form() {
     }));
   }
 
-  
   function handleSubmit(event) {
-    
     console.log(formData);
-    
+    // You can perform additional actions here if needed
   }
 
   return (
@@ -78,6 +74,9 @@ export default function Form() {
         {/* Optional hidden fields */}
         <input type="hidden" name="_subject" value="New Contact Form Submission" />
         
+        {/* Corrected _next field */}
+        <input type="hidden" name="_next" value="https://devsankale.github.io/Sankale-Portfolio/" />
+
         <button type="submit" className="js-button">
           SUBMIT
         </button>
