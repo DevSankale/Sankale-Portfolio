@@ -30,6 +30,7 @@ function Projects({ id, backgroundImage, title, link, description }) {
           alt="External link"
         />
       </a>
+      <p className="description">{description}</p>
       
     </div>
   );

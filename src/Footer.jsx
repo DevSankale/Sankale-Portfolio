@@ -3,7 +3,7 @@ import React from "react";
 function Footer(){
   return (
   <div className="footer">
-        <p>Lets Connect.</p>
+        <p>Let's Connect.</p>
         <div className="Contact" >
           <a href="https://www.instagram.com/sankaledev/" target="_blank"><ion-icon
               name="logo-instagram"></ion-icon></a>
@@ -14,7 +14,7 @@ function Footer(){
             </ion-icon></a>
           <a href="https://github.com/DevSankale" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
         </div>
-        <p>Sankaledev&copy2023.</p>  
+        <p>Sankaledev&copy;2023.</p>  
   </div>
   )
 }

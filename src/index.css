@@ -9,6 +9,10 @@ body {
   padding-top: 50px;
   
 }
+body { font-family: 'Poppins', sans-serif; }
+h1 { font-size: 2rem; font-weight: 700; }
+p { font-size: 1rem; font-weight: 300; }
+
 
 .navbar {
   background-color: rgb(243, 189, 13); 
@@ -176,12 +180,14 @@ gap: 50px;
 .project-container{
   
   padding: 30px;
-  margin: 30px;
+  margin: 50px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
- 
-  
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  gap: 10px;
 }
+
 
 .projects-head {
   color: black;
@@ -191,7 +197,11 @@ gap: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-
+.description{
+  color: whitesmoke;
+  font-size: 12px;
+  padding-top: 50px;
+}
 
 
 img {
@@ -417,6 +427,8 @@ textarea{
   .project-container{
     display: flex;
     flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
    
   }
 }
@@ -442,5 +454,37 @@ textarea{
   .project-container {
       display: flex;
       flex-direction: column;
+ 
+  }
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-card {
+    width: 48%;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 767px) {
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
   }
 }
