@@ -37,6 +37,7 @@ function App() {
        </div>
      </section>
      <Form />
+     <hr className='ruler'></hr>
      <Footer />
    </>
  );

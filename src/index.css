@@ -171,7 +171,7 @@ gap: 50px;
 }
 
 #Project{
-  margin: 50px;
+  margin: 20px;
   font-size: 20px;
   font-weight: 900;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -179,7 +179,7 @@ gap: 50px;
 }
 .project-container{
   
-  padding: 30px;
+  padding: 70px;
   margin: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -267,7 +267,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.footerContainer{
+  padding: 50px;
+}
 .footer {
   display: flex;
   align-items: center;
@@ -277,11 +279,29 @@ img {
   margin-top: 70px;
   
 }
+.BacktoTop{
+  padding: 10px;
+  text-align: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  
+}
+
+.footerinfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+  padding: 40px;
+  margin: 10px;
+}
 
 .Contact {
   color: black;
-  padding: 20px;
-  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,6 +351,10 @@ ion-icon {
   margin: 50px;
   border-radius: 10px;
   
+}
+
+.ruler{
+ margin: 50px;
 }
 input{
   display: block;

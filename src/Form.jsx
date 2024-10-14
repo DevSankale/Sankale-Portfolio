@@ -17,7 +17,7 @@ export default function Form() {
 
   function handleSubmit(event) {
     console.log(formData);
-    // You can perform additional actions here if needed
+    
   }
 
   return (
