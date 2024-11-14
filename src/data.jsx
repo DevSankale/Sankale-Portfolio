@@ -5,7 +5,7 @@ export default [
     title:"RecipeApp",
     description:"A responsive web app that allows users to search for recipes based on ingredients or dish names, providing clear instructions and a list of ingredients. Designed with a clean UI and optimized for easy navigation on all device sizes."
   ,
-    link:"https://devsankale.github.io/Sankale-Portfolio/",
+    link:"https://devsankale.github.io/RecipeApp/",
     backgroundImage:"./images/Recipe1.jpg"
 
 
