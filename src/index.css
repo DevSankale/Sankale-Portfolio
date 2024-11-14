@@ -4,9 +4,11 @@
   scroll-behavior: smooth;
 }
 
-body {
+body,html {
  
   padding-top: 50px;
+  overflow-x: hidden;
+
   
 }
 body { font-family: 'Poppins', sans-serif; }
@@ -16,9 +18,9 @@ p { font-size: 1rem; font-weight: 300; }
 
 .navbar {
   background-color: rgb(243, 189, 13); 
-  padding: 20px;
+  padding: 40px;
   position: fixed; /* Set navbar position to fixed */
-  width: 100%; /* Make navbar span the entire width of the viewport */
+  width: 100vw; /* Make navbar span the entire width of the viewport */
   top: 0; /* Position navbar at the top of the viewport */
   z-index: 1000;
   display: flex;
@@ -27,11 +29,16 @@ p { font-size: 1rem; font-weight: 300; }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li {
   display: inline-block;
-  padding-right: 50px;
+  padding-right: 20px;
+  flex: 1;
   
 }
 
@@ -140,14 +147,16 @@ li a:hover {
 }
 
 .project-tile p {
-  padding: 50px;
+  padding: 20px;
  text-align: center;
-  margin: 20px;
+  margin: 10px;
   border-radius: 20px;
   color: white;
-  font-size: 12px;
-  line-height: normal;
+  font-size: 14px;
+  line-height: 1.4;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .skills{
 display: flex;
@@ -403,60 +412,17 @@ textarea{
 .imagecontainer:hover {
   transform: scale(1.1); /* Scale the image container by 10% */
 }
-
-@media (max-width: 768px) {
-  .welcome-div {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally */
-  }
-
-  .details {
-      text-align: center; /* Center text for better readability */
-      padding: 10px; /* Adjust padding for smaller screens */
-  }
-
-  #pic1 {
-      margin-top: 20px; /* Add space between text and image */
-  }
-  .projectdetails {
-    flex: 0 0 100%; /* Full width on smaller screens */
-    
+.link{
+  color: black;
 }
 
-  .project-container{
+
+
+@media (max-width: 375px) {
+  .project-tile{
     display: flex;
     flex-direction: column;
-   
   }
-}
-@media (max-width: 768px) {
-  .welcome-div {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center items horizontally */
-  }
-
-  .details {
-      text-align: center; /* Center text for better readability */
-      padding: 10px; /* Adjust padding for smaller screens */
-  }
-
-  #pic1 {
-      margin-top: 20px; /* Add space between text and image */
-  }
-  .projectdetails {
-    flex: 0 0 100%; /* Full width on smaller screens */
-    
-}
-
-  .project-container{
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-   
-  }
-}
-@media (max-width: 600px) {
   .welcome-div {
       flex-direction: column; /* Stack items vertically */
       align-items: center; /* Center items horizontally */
@@ -476,10 +442,18 @@ textarea{
   }
 
   .project-container {
-      display: flex;
-      flex-direction: column;
- 
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust for smaller items */
+    gap: 10px;
   }
+
+.footerinfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Large Screens (Desktop) */
@@ -511,4 +485,162 @@ textarea{
   .nav-links {
     flex-direction: column;
   }
+}
+}
+@media (max-width: 412px) {
+  .project-container {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+    padding: 10px;
+  }
+
+  .project-tile p {
+    font-size: 12px; /* Further reduce font size */
+    padding: 10px;
+    margin: 5px;
+  }
+  .project-tile{
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome-div {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .details {
+      text-align: center; /* Center text for better readability */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  #pic1 {
+      margin-top: 20px; /* Add space between text and image */
+  }
+
+  .projectdetails {
+      flex: 0 0 100%; /* Full width on smaller screens */
+  }
+
+  .project-container {
+      display: flex;
+      flex-direction: column;
+ 
+  }
+
+.footerinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-card {
+    width: 48%;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 767px) {
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
+}
+@media (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+    padding: 10px;
+  }
+
+  .project-tile p {
+    font-size: 12px; /* Further reduce font size */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+  }
+  .navbar{
+    padding: 40px;
+  }
+  ul{
+    justify-content: center;
+  }
+  li{
+    padding-right: 10px;
+  }
+  .welcome-div {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .details {
+      text-align: center; /* Center text for better readability */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  #pic1 {
+      margin-top: 20px; /* Add space between text and image */
+  }
+
+  .projectdetails {
+      flex: 0 0 100%; /* Full width on smaller screens */
+  }
+
+
+
+.footerinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-card {
+    width: 48%;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 767px) {
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
 }
