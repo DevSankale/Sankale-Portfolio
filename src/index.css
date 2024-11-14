@@ -388,11 +388,12 @@ textarea{
   text-decoration: none;
   font-size: 12px;
   color: white;
-  padding: 10px 110px;
+  padding: 10px 20px;
   font-weight: lighter;
   transition: color 0.5s,box-shadow 0.5s,background-color 0.5s;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100%;
+  max-width: 300px;
   border: none;
   
 }
@@ -488,6 +489,45 @@ textarea{
 }
 }
 @media (max-width: 412px) {
+  .skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 50px;
+    gap: 20px;
+    }
+  .navbar {
+    display: flex;
+    justify-content: center; /* Center align navbar items */
+    padding: 10px 0; /* Adjust top/bottom padding for more compact fit */
+    width: 100vw; /* Ensure navbar takes the full viewport width */
+  }
+
+  ul {
+    display: flex;
+    justify-content: center; /* Center align list items */
+    flex-wrap: wrap; /* Allow wrapping to avoid overflow */
+    gap: 5px; /* Adds slight space between items */
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding-right: 5px; /* Minimize padding for smaller screens */
+    flex: initial; /* Removes default flex behavior to avoid stretching */
+  }
+
+  li a {
+    font-size: 11px; /* Reduce font size slightly for smaller screens */
+    padding: 8px 5px; /* More compact link padding */
+    text-align: center;
+  }
+  .js-button {
+    padding: 6px 12px; /* More compact padding */
+    font-size: 10px; /* Smaller font size */
+    max-width: 100%; /* Ensures button fills container width */
+  }
   .project-container {
     grid-template-columns: 1fr; /* Single column layout on small screens */
     padding: 10px;
@@ -565,6 +605,7 @@ textarea{
 }
 }
 @media (max-width: 600px) {
+
   .project-container {
     grid-template-columns: 1fr; /* Single column layout on small screens */
     padding: 10px;
